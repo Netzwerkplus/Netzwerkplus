@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dienstleistungen - Netzwerk+ Vertriebs GmbH</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Netzwerk+"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="request.html">Ich suche</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main><section id="services" class="section-padding">
+        
+            <div class="services-content"> <h2>Lebensversicherungscheck – Maximale Transparenz und Sicherheit</h2>
+                <section class="text-image-section">
+  <div class="text-content">
+   
+    <ul class="image-content">
+        <li><p>Kostenlose Prüfung Ihrer Lebensversicherung.</p></li>
+      
+        <li><p>Optimierungsvorschläge: Bessere Konditionen oder Rückzahlungen.</p></li>
+        
+        <li><p>Rückabwicklung: Hohe Rückerstattungen bei abgelaufenen Verträgen möglich.</p></li>
+    </ul>  
+ </div>
+  <div class="image-content">
+    <img src="lebensversicherungcheck.jpg" alt="Lebensversicherungcheck">
+  </div>
+</section>
+            </div>
+          <div class="text-image-section">
+        <div class="text-content">
+            <h3>So funktioniert es:</h3>
+            <ol>
+                <li>Füllen Sie das Formular mit Ihren Daten aus.</li>
+                <li>Unsere Experten nehmen Kontakt mit Ihnen auf.</li>
+                <li>Nach der Analyse erhalten Sie individuelle Empfehlungen zur Optimierung oder Rückabwicklung Ihrer Lebensversicherung.</li>
+            </ol>
+        </div>
+      
+    </div>
+          <form action="mailto:info@netzwerkplus.at" method="post" enctype="text/plain" class="lv-form">
+        <label for="anrede">Anrede:</label>
+        <select id="anrede" name="Anrede" required>
+            <option value="Herr">Herr</option>
+            <option value="Frau">Frau</option>
+        </select><br><br>
+
+        <label for="vorname">Vorname:</label>
+        <input type="text" id="vorname" name="Vorname" required><br><br>
+
+        <label for="nachname">Nachname:</label>
+        <input type="text" id="nachname" name="Nachname" required><br><br>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="E-Mail" required><br><br>
+
+        <label for="telefonnummer">Telefonnummer:</label>
+        <input type="tel" id="telefonnummer" name="Telefonnummer" required><br><br>
+
+        <label for="strasse">Straße:</label>
+        <input type="text" id="strasse" name="Straße" required><br><br>
+
+        <label for="plz">PLZ:</label>
+        <input type="text" id="plz" name="PLZ" required><br><br>
+
+        <label for="ort">Ort:</label>
+        <input type="text" id="ort" name="Ort" required><br><br>
+
+        <label for="status">Wie ist der Status Ihrer Lebensversicherung?</label>
+        <select id="status" name="Status_LV" required>
+            <option value="Aktiv">Aktiv</option>
+            <option value="Abgelaufen">Abgelaufen</option>
+        </select><br><br>
+
+        <!-- Datenschutzerklärung -->
+        <label for="datenschutz">
+            <input type="checkbox" id="datenschutz" name="Datenschutz" required>
+            Mit der Eingabe meiner Daten bin ich einverstanden, dass diese auf Kosten von Netzwerkplus zu Anwälten weitergereicht werden.
+        </label><br><br>
+
+        <!-- Absenden-Button -->
+        <button type="submit" class="submit-button">Absenden</button>
+    </form>
+        </section>
+        <br>  <br>  <br>  <br>
+       
+    </main>
+    <footer>
+    <div class="footer-content">
+        <div class="footer-section contact-info">
+            <h2>Kontakt</h2>
+            <p>Email: <a href="mailto:info@netzwerkplus.at">info@netzwerkplus.at</a></p>
+            <p>Telefon: +43 676 9655805</p>
+            <p>Adresse: Liebenauer Hauptstraße 82c, 8041 Graz, Österreich</p>
+        </div>
+      
+        <div class="footer-section legal-links">
+            <h2>Rechtliches</h2>
+            <p><a href="impressum.html">Impressum</a></p>
+            <p><a href="privacy.html">Datenschutzerklärung</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Netzwerk+ Vertriebs GmbH</p>
+    </div>
+</footer>
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

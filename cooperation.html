@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dienstleistungen - Netzwerk+ Vertriebs GmbH</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Netzwerk+"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="request.html">Ich suche</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="kooperationsvertrieb">
+    <h2>Kooperationsvertrieb – So funktioniert es</h2>
+    
+    <!-- Text und Ablauf für den Kooperationsvertrieb -->
+    <div class="text-image-section">
+        <div class="text-content">
+            <h3>So funktioniert der Kooperationsvertrieb:</h3>
+            <ol>
+                <li>Nehmen Sie Kontakt mit uns auf, indem Sie das Formular ausfüllen.</li>
+                <li>Wir besprechen gemeinsam, wie wir den Vertrieb Ihrer Produkte unterstützen können.</li>
+                <li>Nach der Analyse Ihrer Anforderungen erstellen wir eine maßgeschneiderte Vertriebslösung und gehen eine Kooperation ein, um Ihre Produkte erfolgreich mit zu vertreiben.</li>
+            </ol>
+        </div>
+        <div class="image-content">
+            <img src="partnerblue.jpg" alt="Kooperationsvertrieb" class="kooperationsvertrieb-image">
+        </div>
+    </div>
+
+    <!-- Formular für Kooperationsanfrage -->
+    <h3>Kooperationsanfrage:</h3>
+    <form action="mailto:info@netzwerkplus.at" method="post" enctype="text/plain" class="kooperation-form">
+        <label for="firmenname">Firmenname:</label>
+        <input type="text" id="firmenname" name="Firmenname" required><br><br>
+
+        <label for="kontaktperson">Kontaktperson:</label>
+        <input type="text" id="kontaktperson" name="Kontaktperson" required><br><br>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="E-Mail" required><br><br>
+
+        <label for="telefonnummer">Telefonnummer:</label>
+        <input type="tel" id="telefonnummer" name="Telefonnummer" required><br><br>
+
+        <label for="produktinfo">Produktinformationen:</label>
+        <textarea id="produktinfo" name="Produktinformationen" rows="5" required></textarea><br><br>
+
+        <!-- Datenschutzerklärung -->
+        <label for="datenschutz">
+            <input type="checkbox" id="datenschutz" name="Datenschutz" required>
+            Ich bin damit einverstanden, dass meine Daten für die Kooperationsanfrage verwendet und verarbeitet werden.
+        </label><br><br>
+
+        <!-- Absenden-Button -->
+        <button type="submit" class="submit-button">Absenden</button>
+    </form>
+</section>
+
+    <main>
+       
+       
+    </main>
+    <footer>
+    <div class="footer-content">
+        <div class="footer-section contact-info">
+            <h2>Kontakt</h2>
+            <p>Email: <a href="mailto:info@netzwerkplus.at">info@netzwerkplus.at</a></p>
+            <p>Telefon: +43 676 9655805</p>
+            <p>Adresse: Liebenauer Hauptstraße 82c, 8041 Graz, Österreich</p>
+        </div>
+      
+        <div class="footer-section legal-links">
+            <h2>Rechtliches</h2>
+            <p><a href="impressum.html">Impressum</a></p>
+            <p><a href="privacy.html">Datenschutzerklärung</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Netzwerk+ Vertriebs GmbH</p>
+    </div>
+</footer>
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ich suche - Netzwerk+ Vertriebs GmbH</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Netzwerk+"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="services.html">Dienstleistungen</a></li>
+            <li><a href="request.html">Ich suche</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section id="request" class="section-padding">
+            <div class="request-content">
+                <h2>Ich suche</h2>
+                <p>Teilen Sie uns mit, was Sie suchen, und wir finden es für Sie!</p>
+                <form id="request-form" class="search-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Ihre Email" required>
+                    <label for="phone">Telefonnummer:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer" required>
+                    <label for="request">Gesuch:</label>
+                    <textarea id="request" name="request" placeholder="Beschreiben Sie, wonach Sie suchen" required></textarea>
+                    <label for="captcha">Bitte geben Sie das Ergebnis von 3 + 4 ein:</label>
+                    <input type="text" id="captcha" name="captcha" placeholder="Ihr Ergebnis" required>
+                    <button type="submit" class="cta-button">Absenden</button>
+                </form>
+            </div>
+        </section>
+    </main>
+     <footer>
+    <div class="footer-content">
+        <div class="footer-section contact-info">
+            <h2>Kontakt</h2>
+            <p>Email: <a href="mailto:info@netzwerkplus.at">info@netzwerkplus.at</a></p>
+            <p>Telefon: +43 676 9655805</p>
+            <p>Adresse: Liebenauer Hauptstraße 82c, 8041 Graz, Österreich</p>
+        </div>
+      
+        <div class="footer-section legal-links">
+            <h2>Rechtliches</h2>
+            <p><a href="impressum.html">Impressum</a></p>
+            <p><a href="privacy.html">Datenschutzerklärung</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Netzwerk+ Vertriebs GmbH</p>
+    </div>
+</footer>
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
